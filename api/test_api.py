@@ -1,4 +1,6 @@
-import pytest
+import requests
 
-def test_api():
-    passgit
+response = requests.get('https://petstore.swagger.io/v2/store/inventory')
+
+print(response)
+print(response.status_code)
